@@ -34,12 +34,19 @@ public class BowlingGameTest {
         assertThat(g.score()).isEqualTo(16);
     }
 
-    @Test public void one_strike() {
+    @Test
+    public void one_strike() {
         rollStrike();
         g.roll(3);
         g.roll(4);
         rollMany(16, 0);
         assertThat(g.score()).isEqualTo(24);
+    }
+
+    @Test
+    public void perfect_game() {
+        rollMany(12, 10);
+        assertThat(g.score()).isEqualTo(300);
     }
 
     private void rollMany(int rolls, int pins) {
