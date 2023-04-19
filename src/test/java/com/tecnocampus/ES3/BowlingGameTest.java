@@ -18,4 +18,12 @@ public class BowlingGameTest {
             g.roll(0);
         assertThat(g.score()).isEqualTo(0);
     }
+
+    @Test
+    public void all_ones() {
+        for (var i = 0; i < 20; i += 1)
+            g.roll(1);
+        assertThat(g.score()).isEqualTo(20);
+    }
+
 }
