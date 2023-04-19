@@ -1,17 +1,18 @@
 package com.tecnocampus.ES3;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class BowlingGameTest {
-
-    @Test
-    public void succeed() {
-
+    private Game g;
+    @BeforeEach
+    public void setUp() {
+        g = new Game();
     }
 
     @Test
     public void create_game() {
-        var g = new Game();
+        
     }
 
     @Test
