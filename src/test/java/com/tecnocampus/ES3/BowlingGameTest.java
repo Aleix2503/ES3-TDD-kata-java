@@ -14,4 +14,10 @@ public class BowlingGameTest {
         var g = new Game();
     }
 
+    @Test
+    public void roll_a_ball() {
+        var g = new Game();
+        g.roll(0);
+    }
+    
 }
