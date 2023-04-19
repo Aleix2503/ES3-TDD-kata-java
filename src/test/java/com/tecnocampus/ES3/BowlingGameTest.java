@@ -19,5 +19,5 @@ public class BowlingGameTest {
         var g = new Game();
         g.roll(0);
     }
-    
+
 }
